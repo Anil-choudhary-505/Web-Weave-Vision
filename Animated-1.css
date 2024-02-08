@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.logo{
+    width: 200px;
+    right: 20px;
+    align-items: flex-start;
+}
+.hero{
+width: 100%;
+height: 100vh;
+background-image: url(/CSS/Animated-1/baground.jpg);
+background-size: cover;
+background-position: center;
+position: relative;
+overflow: hidden;
+}
+.navbar{
+    width: 93%;
+    height: 15%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+button{
+    color:#fbfcfd;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    width: 90px;
+    margin-right:15px;
+}
+.conten{
+        color:#fbfcfd;
+        top: 50%;
+        left: 8%;
+        position: absolute;
+        transform: translateY(-50%);
+        z-index: 2;
+}
+h1{
+    font-size: 80px;
+    margin: 10px 0 30px;
+    line-height: 80px;
+}
+.side-bar{ 
+    width: 50px;
+    height: 100vh;
+    background: linear-gradient(#000000, #020e47 );
+    right: 0;
+    top: 0;
+    position: absolute;
+}
+.menu{
+    display: block;
+    width: 25px;
+    margin: 40px auto 0;
+    cursor: pointer;    
+}
+.social-links img, .useful-links img{
+    width: 25px;
+    margin: 5px auto;
+    cursor: pointer;
+}
+.social-links{
+    width: 50px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.useful-links{
+    width: 50px;
+    text-align: center;
+    position: absolute;
+    bottom: 30px;
+}
+.bubbles img{
+width: 50px;
+animation: bubble 7s linear infinite;
+}
+.bubbles{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -70px;
+}
+@keyframes bubble{
+    0%{
+        transform: translatey(0);
+        orphans: 0;
+    }
+    50%{
+        orphans: 1;
+    }
+    70%{
+        orphans: 1;
+    }
+    100%{
+        transform: translateY(-80vh);
+        orphans: 0;
+    }
+}
+
+.bubbles img:nth-child(1){
+    animation-delay: 2s;
+    width: 40px;
+}
+.bubbles img:nth-child(2){
+    animation-delay: 1s;
+}
+.bubbles img:nth-child(3){
+    width: 55px;
+    animation-delay: 3s;
+}
+.bubbles img:nth-child(4){
+    animation-delay: 4.5s;
+}
+.bubbles img:nth-child(5){
+    animation-delay: 3s;
+}
+.bubbles img:nth-child(6){
+    width: 55px;
+    animation-delay: 6s;
+}
+.bubbles img:nth-child(7){
+    width: 60px;
+    animation-delay: 7s;
+}
